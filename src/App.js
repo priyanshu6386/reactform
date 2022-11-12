@@ -13,13 +13,13 @@ const App = () => {
   const inputs = [
     {
       id: 1,
-      name: "username",
+      name: "FullName",
       type: "text",
-      placeholder: "Enter Name",
+      placeholder: "Enter Full Name",
       errorMessage:
-        "Please Enter Name",
-      label: "Name",
-      pattern: "^[A-Za-z0-9]{3,16}$",
+        "Please Enter Full Name",
+      label: "Full Name",
+      pattern: "^[a-zA-Z]*$"!=null,
       required: true,
     },
     {
@@ -29,6 +29,7 @@ const App = () => {
       placeholder: "Email",
       errorMessage: "It should be a valid email address!",
       label: "Email",
+      // pattern : "/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/",
       required: true,
     },
    
